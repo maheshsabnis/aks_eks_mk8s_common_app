@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-2",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "HelloAKS",
+    "environment"    : "HelloAKS-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.3.5 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "helloaksmsit",
+    "instance-type"        : "a1.medium",
+    "key-pair"             : "msit001",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}

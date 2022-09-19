@@ -1,0 +1,15 @@
+# service.yml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: hello-aks
+  name: hello-aspnetcore-service
+spec:
+  ports:
+    - port: 8080 # external port used to access the service
+      targetPort: 80 # container port
+  selector:
+    app: hello-aspnetcore-pod
+  type: LoadBalancer # allows the public access of the service
+
